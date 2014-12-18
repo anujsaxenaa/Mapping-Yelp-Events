@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Final Project</title>
+	<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/iThing.css" type="text/css" />
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+    <link type="text/css" rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.datetimepicker.css"/ >
+</head>
+<body>
+    
+  <div class="tabs">
+    <ul class="tab-links">
+        <li class="active"><a href="#tab1">New York</a></li>
+        <li><a href="#tab2">Bay Area</a></li>
+        <li><a href="#tab3">Los Angeles</a></li>
+    </ul>
+ 
+    <div class="tab-content">
+        <div id="tab1" class="tab active">
+            <p>
+              <div id="map" style="height:600px;width:1200px;">
+               </div>
+            </p>
+            
+        </div>
+ 
+        <div id="tab2" class="tab">
+            <p>
+              <div id="map2" style="height:600px;width:1200px;">
+               </div>
+            </p>
+        </div>
+ 
+        <div id="tab3" class="tab">
+            <p>
+            <div id="map3" style="height:600px;width:1200px;">
+            </p>
+        </div>
+    </div>
+</div>
+
+
+	  <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+	  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/eventsNY.js"></script>
+    <script src="js/eventsBA.js"></script>
+    <script src="js/eventsLA.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+    <!-- // <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script> -->
+    <script src="js/SliderControl.js"></script>
+    <script src="js/scriptLA.js"></script>
+    <script src="js/scriptBA.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/jquery.js"></script>
+
+</body>
+</html>
