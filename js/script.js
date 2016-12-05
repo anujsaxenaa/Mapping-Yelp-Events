@@ -131,7 +131,7 @@ var grayscale = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services
 // var MapQuestOpen_Aerial = L.tileLayer('http://oatile{s}.mqcdn.com/tiles/1.0.0/sat/{z}/{x}/{y}.jpg', {
 // 	attribution: false,
 // 	subdomains: '1234'
-});
+// });
 
 // Initializing the map
 
