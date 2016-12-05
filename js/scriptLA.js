@@ -135,7 +135,7 @@ var grayscale_LA = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/servi
 
 // Initializing the map
 
-var map3 = L.map('map3', {zoomControl:true, layers: [OpenMapSurfer_Roads_LA, eventAll_LA]}).setView([34.010254, -118.270284], 9);
+var map3 = L.map('map3', {zoomControl:true, layers: [grayscale_LA, eventAll_LA]}).setView([34.010254, -118.270284], 9);
 
 
 var baseMaps_LA = {
