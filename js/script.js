@@ -135,7 +135,7 @@ var grayscale = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services
 
 // Initializing the map
 
-var map = L.map('map', {zoomControl:false, layers: [MapQuestOpen_Aerial, eventAll]}).setView([40.7241745, -73.9841674], 11);
+var map = L.map('map', {zoomControl:false, layers: [grayscale, eventAll]}).setView([40.7241745, -73.9841674], 11);
 
 
 var baseMaps = {
