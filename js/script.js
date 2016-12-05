@@ -116,11 +116,11 @@ var visualarts = L.geoJson(categoryVisualArts, {onEachFeature: function (feature
 
 // Defining base layers
 
-var grayscale = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
-				attribution: false,
-				zoomControl: false
-				// maxZoom: 16
-				});
+// var grayscale = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+// 				attribution: false,
+// 				zoomControl: false
+// 				// maxZoom: 16
+// 				});
 
 var OpenMapSurfer_Roads = L.tileLayer('http://openmapsurfer.uni-hd.de/tiles/roads/x={x}&y={y}&z={z}', {
 							minZoom: 0,
@@ -128,20 +128,20 @@ var OpenMapSurfer_Roads = L.tileLayer('http://openmapsurfer.uni-hd.de/tiles/road
 							attribution: false
 							});
 
-var MapQuestOpen_Aerial = L.tileLayer('http://oatile{s}.mqcdn.com/tiles/1.0.0/sat/{z}/{x}/{y}.jpg', {
-	attribution: false,
-	subdomains: '1234'
-});
+// var MapQuestOpen_Aerial = L.tileLayer('http://oatile{s}.mqcdn.com/tiles/1.0.0/sat/{z}/{x}/{y}.jpg', {
+// 	attribution: false,
+// 	subdomains: '1234'
+// });
 
 // Initializing the map
 
-var map = L.map('map', {zoomControl:false, layers: [MapQuestOpen_Aerial, eventAll]}).setView([40.7241745, -73.9841674], 11);
+var map = L.map('map', {zoomControl:true, layers: [MapQuestOpen_Aerial, eventAll]}).setView([40.7241745, -73.9841674], 11);
 
 
 var baseMaps = {
-    "Grayscale": grayscale,
-    "OpenMapSurfer": OpenMapSurfer_Roads,
-    "Aerial": MapQuestOpen_Aerial
+    "Grayscale": grayscale//,
+//     "OpenMapSurfer": OpenMapSurfer_Roads,
+//     "Aerial": MapQuestOpen_Aerial
 };
 
 var overlayMaps = {
