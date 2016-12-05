@@ -116,17 +116,17 @@ var visualarts = L.geoJson(categoryVisualArts, {onEachFeature: function (feature
 
 // Defining base layers
 
-// var grayscale = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
-// 				attribution: false,
-// 				zoomControl: false
-// 				// maxZoom: 16
-// 				});
+var grayscale = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+				attribution: false,
+				zoomControl: false
+				// maxZoom: 16
+				});
 
-var OpenMapSurfer_Roads = L.tileLayer('http://openmapsurfer.uni-hd.de/tiles/roads/x={x}&y={y}&z={z}', {
-							minZoom: 0,
-							maxZoom: 20,
-							attribution: false
-							});
+// var OpenMapSurfer_Roads = L.tileLayer('http://openmapsurfer.uni-hd.de/tiles/roads/x={x}&y={y}&z={z}', {
+// 							minZoom: 0,
+// 							maxZoom: 20,
+// 							attribution: false
+// 							});
 
 // var MapQuestOpen_Aerial = L.tileLayer('http://oatile{s}.mqcdn.com/tiles/1.0.0/sat/{z}/{x}/{y}.jpg', {
 // 	attribution: false,
