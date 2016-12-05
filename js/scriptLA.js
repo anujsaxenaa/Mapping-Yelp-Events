@@ -122,26 +122,26 @@ var grayscale_LA = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/servi
 				// maxZoom: 16
 				});
 
-var OpenMapSurfer_Roads_LA = L.tileLayer('http://openmapsurfer.uni-hd.de/tiles/roads/x={x}&y={y}&z={z}', {
-							minZoom: 0,
-							maxZoom: 20,
-							attribution: false
-							});
+// var OpenMapSurfer_Roads_LA = L.tileLayer('http://openmapsurfer.uni-hd.de/tiles/roads/x={x}&y={y}&z={z}', {
+// 							minZoom: 0,
+// 							maxZoom: 20,
+// 							attribution: false
+// 							});
 
-var MapQuestOpen_Aerial_LA = L.tileLayer('http://oatile{s}.mqcdn.com/tiles/1.0.0/sat/{z}/{x}/{y}.jpg', {
-	attribution: false,
-	subdomains: '1234'
-});
+// var MapQuestOpen_Aerial_LA = L.tileLayer('http://oatile{s}.mqcdn.com/tiles/1.0.0/sat/{z}/{x}/{y}.jpg', {
+// 	attribution: false,
+// 	subdomains: '1234'
+// });
 
 // Initializing the map
 
-var map3 = L.map('map3', {zoomControl:false, layers: [OpenMapSurfer_Roads_LA, eventAll_LA]}).setView([34.010254, -118.270284], 9);
+var map3 = L.map('map3', {zoomControl:true, layers: [OpenMapSurfer_Roads_LA, eventAll_LA]}).setView([34.010254, -118.270284], 9);
 
 
 var baseMaps_LA = {
-    "Grayscale": grayscale_LA,
-    "OpenMapSurfer": OpenMapSurfer_Roads_LA,
-    "Aerial": MapQuestOpen_Aerial_LA
+    "Grayscale": grayscale_LA//,
+//     "OpenMapSurfer": OpenMapSurfer_Roads_LA,
+//     "Aerial": MapQuestOpen_Aerial_LA
 };
 
 var overlayMaps_LA = {
